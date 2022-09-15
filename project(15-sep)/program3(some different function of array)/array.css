@@ -1,0 +1,46 @@
+h1 {  
+    text-align: center;  
+    padding: 20px;  
+    
+    color: skyblue;  
+    }  
+ 
+button{
+    font-size: 40px;
+    background: skyblue;
+    align: center;
+    font-style: italic;
+    color: rgb(4, 0, 255);
+border-radius: 5px;
+}
+label{
+    font-size: 25px;
+    align: center;
+font-style: italic;
+}
+input{
+    font-size: 20px;
+    background: skyblue;
+align: center;
+font-style: italic;
+color: rgb(6, 2, 254);
+border-radius: 5px;
+margin: 5px;
+}
+input button{
+     font-size: 30px;
+    background: skyblue;
+align: center;
+font-style: italic;
+color: rgb(4, 0, 253);
+border-radius: 5px;
+margin: 5px;
+}
+span{
+    font-size: 20px;
+    color: rgb(43, 0, 255);
+}
+ hr{
+    height: 2px;
+background: blue; 
+}
