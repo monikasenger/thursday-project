@@ -1,6 +1,6 @@
 <html>
 <head>
-    
+    <link href="array.css" type="text/css" rel="stylesheet"/>
  <script type="text/javascript">
     //hide show method in different button according to the use
     //this is for merge the araay
@@ -105,7 +105,7 @@ for(let i=0;i<array2.length;i++){
   if(array3.indexOf(array2[i]) == -1)
      array3.push(array2[i])
 }
-document.getElementById('displaymerge').innerHTML='<h2>array element after merge: </h2>{'+array3+ '}'; 
+document.getElementById('displaymerge').innerHTML='<h3>array element after merge:{'+array3+ '}</h3>'; 
     }
 
     //add the array function
@@ -153,18 +153,20 @@ document.getElementById('displaymerge').innerHTML='<h2>array element after merge
             document.getElementById('displayc1').innerHTML=('<h3>Array contains a value.</h3>');
 } else {
     document.getElementById('displayc1').innerHTML=('<h3>Array does not contain a value.</h3>');
-}
-     
+}   
 }
     </script>
 </head>
-  
 <body>
+    
+    <h1> ARRAY USING JAVASCRIPT </h1>
+        <div class="merge">
     <button onclick="merge()">merge array</button>
     <div id="merge" STYLE="display:none">
-            <label for="no" > how many laguage you want to enter in first array: </label>
+<label for="no" > how many laguage you want to enter in first array: </label>
             <input id="no" type="text">
             <input type="button" value="ok" onclick="savedata()">
+            <br>
             <label for="no1" > how many laguage you want to enter in second array: </label>
             <input id="no1" type="text">
             <input type="button" value="ok" onclick="savedata1()">
@@ -185,45 +187,53 @@ document.getElementById('displaymerge').innerHTML='<h2>array element after merge
         <span id='displaya2'></span>    
         <span id='displaymerge'></span> 
 </div>
+</div>
+    
 <hr>
-  
+    
 <button onclick="addarray()">add array</button>
 <div id="addarray" STYLE="display:none">
     <label for="noa" > how many laguage you want to enter in  array: </label>
             <input id="noa" type="text">
             <input type="button" value="ok" onclick="adda()">
+            
     </div>
             <div id="displaya" STYLE="display:none">
                 <label for="arr" > element of  array: </label>
                 <input id="arr" type="text">
                 <input type="button" value="add" onclick="addarr()"> 
+                
                 <label for="e" >  new  element to add in the array: </label>
                 <input id="e" type="text">
                 <input type="button" value="add" onclick="adde()"> 
                 <br>
         <span id='displayarr1'></span><br>
         <span id='displayele'></span>    
+       
 </div>
+
 <hr>
-  
+    
 <button onclick="checkarray()">check array</button>
 <div id="checkarray" STYLE="display:none">
     <label for="noc" > how many laguage you want to enter in  array: </label>
             <input id="noc" type="text">
-            <input type="button" value="ok" onclick="addc()">   
+            <input type="button" value="ok" onclick="addc()">       
     </div>
             <div id="displayc" STYLE="display:none">
                 <label for="arrc" > element of  array: </label>
                 <input id="arrc" type="text">
                 <input type="button" value="add" onclick="checkarr()"> 
+                
                 <label for="c" >    element contain in  array: </label>
                 <input id="c" type="text">
                 <input type="button" value="check" onclick="ce()"> 
                 <br>
+
         <span id='displaych'></span><br>
         <br>
-        <span id='displayc1'></span>    
-       
+        <span id='displayc1'></span>       
 </div>
+
 </body>
 </html>
