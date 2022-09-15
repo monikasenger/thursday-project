@@ -1,0 +1,50 @@
+h1 {  
+    text-align: center;  
+    padding: 20px;  
+    
+    color: skyblue;  
+    }  
+  
+  
+  #back{
+    width: 110px; 
+  }
+.formstyle  
+{  
+width: 350px;  
+height: 640px;  
+margin: auto;  
+border: 3px solid skyblue;  
+border-radius: 5px;  
+padding: 10px;  
+}  
+  
+ .op{
+  background-color: rgb(168, 168, 246);  
+  color: rgb(25, 0, 249); 
+ } 
+  
+input  
+{  
+width: 70px;  
+background-color: rgb(226, 233, 226);  
+color: rgb(29, 25, 25);  
+border: 3px solid gray;  
+    border-radius: 5px;  
+    padding: 25px;  
+    margin: 5px;  
+  font-size: 25px;
+  
+}  
+  .ope{
+    background-color: rgb(17, 17, 236);  
+    color: white; 
+  }
+  
+#calc{  
+width: 350px;  
+border: 5px solid  skyblue;  
+    border-radius: 3px;  
+    padding: 20px;  
+    margin: auto;  
+}  
