@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <meta  name="viewport" content="width-device-width,inital-scale=1">  
+        <link href="slider.css" type="text/css" rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/496a1af3db.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/> 
+       
+    </head>
+
+    <body>
+        <center> <h1> AUTOMATIC SLIDER  USING JAVASCRIPT </h1> </center>
+         <BR>
+        <div class="container">
+            <div class="swiper">
+            <div class="swiper-wrapper"> 
+             
+              <div class="swiper-slide"><img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\1.jpg"></div>
+              <div class="swiper-slide"><img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\2.jpg"></div>
+              <div class="swiper-slide"><img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\3.jpg"></div>
+              <div class="swiper-slide"><img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\4.jpg"></div>
+              <div class="swiper-slide"><img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\5.jpg"></div>
+              <div class="swiper-slide"><img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\6.jpg"></div>
+              <div class="swiper-slide"><img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\7.jpg"></div>
+              <div class="swiper-slide"><img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\8.jpg"></div>
+              <div class="swiper-slide"><img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\9.jpg"></div>
+              <div class="swiper-slide"><img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\10.jpg"></div>
+            </div>
+             </div></div> 
+             <br>
+             <br>
+             <center> <h1>  SLIDER USING BUTTON USING JAVASCRIPT </h1> </center>
+             <div class="slider-wrap">
+               
+                <div class="slider-main" id="slider-main">
+                   
+                    <div class="item">
+                        <div class="text"> <img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\11.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div class="text"> <img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\12.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div class="text"> <img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\13.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div class="text"> <img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\14.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div class="text"> <img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\15.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div class="text"> <img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\16.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div class="text"> <img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\17.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div class="text"> <img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\18.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div class="text"> <img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\19.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div class="text"> <img src="C:\Users\shubham\Desktop\anudip\html\anudip\image\20.jpg"></div>
+                    </div>
+                    
+                    
+                   
+                </div>
+                 <div class="btn-area">
+                    <button type="button" class="slider-btn1" onclick="prev()"><i class="fa fa-caret-left" aria-hidden="true"></i></button>
+                </div>
+                <div class="btn-area">
+                    <button type="button" class="slider-btn2" onclick="next()"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+    
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    autoplay: {
+                        delay:2000,
+                        disableOnInteraction: false,
+                    },
+              loop: true,
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+            </script>
+            <script>
+                var array=["item1","item2","item3"]
+                var slidermain = document.getElementById("slider-main");
+                var item= slidermain.getElementsByClassName("item")
+            function next(){
+                slidermain.append(item[0])
+            }
+               </script>
+        </body>
+</html>
