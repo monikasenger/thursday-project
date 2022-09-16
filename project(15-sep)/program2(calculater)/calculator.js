@@ -1,3 +1,6 @@
+//javascript file for calculator
+
+//for display button
 function display(val){
 
     document.getElementById('calc').value += val
@@ -5,6 +8,7 @@ function display(val){
     return val
     
     }
+    //for solve button
     function solve(){
     
     let x = document.getElementById('calc').value
@@ -16,11 +20,13 @@ function display(val){
     return y
     
     }
+    //for click button
     function clearScreen(){
     
     document.getElementById('calc').value = ''
     
     }
+    //for back button
     function back() {
       if(value.length>0)
         document.getElementById('calc').value=value.substr(0, value.length - 1);
