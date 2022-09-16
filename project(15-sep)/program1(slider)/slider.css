@@ -1,34 +1,38 @@
-*,body{
+/* css file of slider html file */
+
+*,body{/* body and whole page */
     margin: 0;
     padding: 0;
 }
-h1{
+h1{/* all heading tag*/
 color: brown;
 font-size: 50px;
 font-family: Arial, Helvetica, sans-serif;
 }
-.container{
+/* css for first slider*/
+.container{/* container clas*/
     top: 0%;
       height: 150vh;
       background:transparent;
       position: relative;
   }
-  .swiper{
+  .swiper{/* swiper class*/
       width: 100%;
       height: 150vh;
   }
-  .swiper-slide img{
+  .swiper-slide img{/* image tag in swiper class*/
       width: 100%;
       height: 100%;
      top: 0;
   }
-  .swiper .swiper-button-prev,.swiper .swiper-button-next{
+  .swiper .swiper-button-prev,.swiper .swiper-button-next{/* swiper next and previous icon in swiper class*/
       color: white;
   }
-  .swiper .swiper-pagination-bullet-active{
+  .swiper .swiper-pagination-bullet-active{/* swiper bullet icon in swiper class*/
      background: white; 
   }
-  .slider-wrap{
+/* css for second slider*/
+  .slider-wrap{/* slider class*/
     position: relative; 
     overflow: hidden;
     height: 200px;
@@ -36,10 +40,10 @@ font-family: Arial, Helvetica, sans-serif;
     margin-top: 50px;
     
 }
-.slider-main{
+.slider-main{/* slider main div class inside slider*/
     position: absolute;
 }
-.item{
+.item{/* item class inside slider class */
     width: 350px;
     background: transparent;
 height: 180px;
@@ -49,7 +53,7 @@ border: 3px dashed green;
 margin: 4px;
 
 }
-.text{
+.text{/* text div class inside slider2 class*/
     position: absolute;
     top: 50%;
     left: 50%;
@@ -58,15 +62,16 @@ margin: 4px;
     color: wheat;
 font-weight: bolder;
 }
-.text img{
+.text img{/* image inside text class*/
     width: 200px;
     height: 150px;
 }
+/* button present inside slider2 class*/
 .btn-area{
     position: absolute;
     
 }
-.slider-btn1{
+.slider-btn1{/*first button*/
     border: none;
     outline: none;
     font-size: 100px;
@@ -77,7 +82,7 @@ margin-top: 45px;
 margin-left: -5px;
 
 }
-.slider-btn2{
+.slider-btn2{/* second button*/
     border: none;
     outline: none;
     font-size: 100px;
@@ -87,7 +92,7 @@ background: transparent;
 margin-top: 45px;
 margin-left:1450px;
 }
-.slider-btn:hover{
+.slider-btn:hover{/* hover in the button*/
     background: white;
     color: brown;
 }
