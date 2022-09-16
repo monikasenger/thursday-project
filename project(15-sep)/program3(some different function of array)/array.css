@@ -1,11 +1,14 @@
-h1 {  
+/* css file of array html file */
+
+
+h1 {  /* heading tag*/
     text-align: center;  
     padding: 20px;  
     
     color: skyblue;  
     }  
  
-button{
+button{ /* all the button tag in html*/
     font-size: 40px;
     background: skyblue;
     align: center;
@@ -13,12 +16,12 @@ button{
     color: rgb(4, 0, 255);
 border-radius: 5px;
 }
-label{
+label{ /* all the label tag in html*/
     font-size: 25px;
     align: center;
 font-style: italic;
 }
-input{
+input{/* all the input tag in html*/
     font-size: 20px;
     background: skyblue;
 align: center;
@@ -27,7 +30,7 @@ color: rgb(6, 2, 254);
 border-radius: 5px;
 margin: 5px;
 }
-input button{
+input button{ /* all the button tag present in input in html*/
      font-size: 30px;
     background: skyblue;
 align: center;
@@ -36,11 +39,11 @@ color: rgb(4, 0, 253);
 border-radius: 5px;
 margin: 5px;
 }
-span{
+span{/* all the span tagin html*/
     font-size: 20px;
     color: rgb(43, 0, 255);
 }
- hr{
+ hr{ /* all the hr tag in html*/
     height: 2px;
 background: blue; 
 }
