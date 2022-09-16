@@ -1,4 +1,6 @@
-h1 {  
+/* css file of calculator html file */
+
+h1 {  /* heading tag in html*/
     text-align: center;  
     padding: 20px;  
     
@@ -6,10 +8,10 @@ h1 {
     }  
   
   
-  #back{
+  #back{ /* back id name in html*/
     width: 110px; 
   }
-.formstyle  
+.formstyle  /* formstyle class in html*/
 {  
 width: 350px;  
 height: 640px;  
@@ -19,12 +21,12 @@ border-radius: 5px;
 padding: 10px;  
 }  
   
- .op{
+ .operator{/* operator class in html*/
   background-color: rgb(168, 168, 246);  
   color: rgb(25, 0, 249); 
  } 
   
-input  
+input  /* all input in html*/
 {  
 width: 70px;  
 background-color: rgb(226, 233, 226);  
@@ -36,15 +38,15 @@ border: 3px solid gray;
   font-size: 25px;
   
 }  
-  .ope{
+  #operator{/* operator id in html*/
     background-color: rgb(17, 17, 236);  
     color: white; 
   }
   
-#calc{  
+#calc{  /* calc id in html*/
 width: 350px;  
 border: 5px solid  skyblue;  
     border-radius: 3px;  
     padding: 20px;  
     margin: auto;  
-}  
+}   
