@@ -1,5 +1,7 @@
+//javascript file for array
+
 //hide show method in different button according to the use
-    //this is for merge the araay
+    //this is for merge the array button
     function merge() {
         var x = document.getElementById('merge');
         if (x.style.display == 'none') {
@@ -8,6 +10,7 @@
             x.style.display = 'none';
         }
     }
+    // this is for array1 number of element button in merge button
     function savedata() {
         var x = document.getElementById('display');
         if (x.style.display == 'none') {
@@ -16,6 +19,7 @@
             x.style.display = 'none';
         }
     }
+        // this is for array2 number of element button in merge button
     function savedata1() {
         var x = document.getElementById('display1');
         if (x.style.display == 'none') {
@@ -24,7 +28,7 @@
             x.style.display = 'none';
         }
     }     
-    // this is for add the array
+    // this is for add the array button
     function addarray(){
         var x = document.getElementById('addarray');
         if (x.style.display == 'none') {
@@ -32,8 +36,10 @@
         } else {
             x.style.display = 'none';
         }
-    } function adda() {
-        var x = document.getElementById('displaya');
+    } 
+       // this is for array number of element button in add button
+    function addarray11() {
+        var x = document.getElementById('displayarray11');
         if (x.style.display == 'none') {
             x.style.display = 'block';
         } else {
@@ -48,9 +54,9 @@
         } else {
             x.style.display = 'none';
         }
-    }
-     function addc() {
-        var x = document.getElementById('displayc');
+    } // this is for element check button in check array button
+     function addcheck() {
+        var x = document.getElementById('displaycheck');
         if (x.style.display == 'none') {
             x.style.display = 'block';
         } else {
@@ -64,26 +70,26 @@
          var data1 = new Array();
     // add the element in the array list
         function add(){// first array list
-        data.push(document.getElementById('a1').value); 
-        document.getElementById('a1').value='';
+        data.push(document.getElementById('array1').value); 
+        document.getElementById('array1').value='';
         var str='';
         var no=document.getElementById('no').value;
         for (i=0;i<no;i++) 
         { 
         str+= +data[i] + ", ";  
         } 
-        document.getElementById('displaya1').innerHTML='<b>first array element: </b>{'+str+ '}'; 
+        document.getElementById('displayarray1').innerHTML='<b>first array element: </b>{'+str+ '}'; 
         }
         function add1(){// second array list
-        data1.push(document.getElementById('a2').value); 
-        document.getElementById('a2').value='';
+        data1.push(document.getElementById('array2').value); 
+        document.getElementById('array2').value='';
         var str1='';
         var no1=document.getElementById('no1').value;
         for (i=0;i<no1;i++) 
         { 
         str1+= +data1[i] + ", ";  
         } 
-        document.getElementById('displaya2').innerHTML='<b>second array element: </b>{'+str1+ '}'; 
+        document.getElementById('displayarray2').innerHTML='<b>second array element: </b>{'+str1+ '}'; 
         }
         //merge button function to merge the array element
         function mergedata(str,str1){
@@ -106,7 +112,7 @@
         var dataarray = new Array(); 
           var datael = new Array(); 
     //add the element in array
-        function addarr(){
+        function addarr1(){
         dataarray.push(document.getElementById('arr').value); 
         document.getElementById('arr').value='';
         var stra='';
@@ -118,7 +124,7 @@
         document.getElementById('displayarr1').innerHTML='<b> array element: </b>{'+stra+ '}'; 
         }
     // element do you want to add in the array list
-        function adde(){
+        function addelement(){
         datael.push(document.getElementById('e').value); 
        var stre='';
        stre= dataarray + ", "+datael;  
@@ -129,10 +135,10 @@
         var checkc = new Array(); 
         // add the element in array
         function checkarr(){
-            checkc.push(document.getElementById('arrc').value); 
-        document.getElementById('arrc').value='';
+            checkc.push(document.getElementById('arrcheck').value); 
+        document.getElementById('arrcheck').value='';
         var strc='';
-        var noc=document.getElementById('noc').value;
+        var noc=document.getElementById('nocheck').value;
         for (i=0;i<noc;i++) 
         { 
         strc+= +checkc[i] + ", ";  
@@ -142,7 +148,7 @@
         // check that  the lement present in array or not
         function ce(){
            var arrc=checkc;
-            var elem=(document.getElementById('c').value);
+            var elem=(document.getElementById('check1').value);
             if(arrc.includes(elem)) {
                 document.getElementById('displayc1').innerHTML=('<h3>Array contains a value.</h3>');
     } else {
