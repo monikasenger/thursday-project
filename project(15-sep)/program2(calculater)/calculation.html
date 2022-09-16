@@ -1,37 +1,34 @@
 <html>
     <head>
-        <link href="calculator.css" type="text/css" rel="stylesheet"/>
-        <script src="calculator.js">
-
-        </script>
+        <link href="calculator.css" type="text/css" rel="stylesheet"/><!-- css file-->
+        <script src="calculator.js"></script><!-- javascript file-->
     </head>
     <body>  
-        <h1> CALCULATOR USING JAVASCRIPT </h1> 
+        <h1> CALCULATOR USING JAVASCRIPT </h1> <!-- heading-->
+        <!-- div for form for calculator-->
         <div class= "formstyle">  
         <form >  
-              
-            
           <input id = "calc" type ="text" name = "answer"> <br> <br>  
-          <input type = "button" value = "back" class="op" id="back" onclick="back()"> 
-          <input type = "button" value = "AC" class="op"  id="back" onclick="clearScreen()">  
-          <input type = "button" value = "/" class="op" onClick="display('/')">  
+          <input type = "button" value = "back" class="operator" id="back" onclick="back()"> <!-- back button -->
+          <input type = "button" value = "AC" class="operator"  id="back" onclick="clearScreen()">  <!-- clear button -->
+          <input type = "button" value = "/" class="operator" onClick="display('/')">  
           <br> <br>
           <input type = "button" value = "1" onClick="display('1')">  
           <input type = "button" value = "2" onClick="display('2')">  
           <input type = "button" value = "3"  onClick="display('3')">  
-           <input type = "button" value = "+" class="op" onClick="display('+')">  
+           <input type = "button" value = "+" class="operator" onClick="display('+')">  
           <br> <br>  
             
           <input type = "button" value = "4" onClick="display('4')">  
           <input type = "button" value = "5" onClick="display('5')">  
           <input type = "button" value = "6" onClick="display('6')">  
-          <input type = "button" value = "-" class="op" onClick="display('-')">  
+          <input type = "button" value = "-" class="operator" onClick="display('-')">  
           <br> <br>  
             
           <input type = "button" value = "7"  onClick="display('7')">  
           <input type = "button" value = "8" onClick="display('8')">  
           <input type = "button" value = "9" onClick="display('9')">  
-          <input type = "button" value = "*" class="op" onClick="display('*')">  
+          <input type = "button" value = "*" class="operator" onClick="display('*')">  
           <br> <br>  
             
             
@@ -39,11 +36,12 @@
           <input type = "button" value = "0" onClick="display('0')">  
             <input type = "button" value = "." onClick="display('.')">  
          
-          <input type = "button" value = "=" class="ope" onClick="solve()">  
+          <input type = "button" value = "=" id="operator" onClick="solve()">  
           <br>   
            
             
         </form>  
         </div>  
         </body>  
+        </html>    
         </html>  
