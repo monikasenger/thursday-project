@@ -1,87 +1,89 @@
 <html>
 <head>
-    <link href="array.css" type="text/css" rel="stylesheet"/>
-  <script src="array.js">
-   
+    <link href="array.css" type="text/css" rel="stylesheet"/> <!-- css file-->
+ <script src="array.js">//javascript file
     </script>
 </head>
 <body>
-    
     <h1> ARRAY USING JAVASCRIPT </h1>
+   <!-- div for merge array-->
         <div class="merge">
-    <button onclick="merge()">merge array</button>
+    <button onclick="merge()">merge array</button>   <!-- merge button-->
+      <!-- if merge button click show this div-->
     <div id="merge" STYLE="display:none">
-<label for="no" > how many laguage you want to enter in first array: </label>
+            <label for="no" > how many element you want to enter in first array: </label>  <!-- no how many element comtain in array1-->
             <input id="no" type="text">
-            <input type="button" value="ok" onclick="savedata()">
+            <input type="button" value="ok" onclick="savedata()"><!-- ok button for array1-->
             <br>
-            <label for="no1" > how many laguage you want to enter in second array: </label>
+            <label for="no1" > how many element you want to enter in second array: </label><!-- no how many element comtain in array2-->
             <input id="no1" type="text">
-            <input type="button" value="ok" onclick="savedata1()">
+            <input type="button" value="ok" onclick="savedata1()"><!-- ok button for array2-->
     </div>
+    <!--if ok button of array 1 click display this div-->
             <div id="display" STYLE="display:none">
-                <label for="a1" > element of first array: </label>
-                <input id="a1" type="text">
-                <input type="button" value="add" onclick="add()"> 
+                <label for="array1" > element of first array: </label><!-- enter element of array1-->
+                <input id="array1" type="text">
+                <input type="button" value="add" onclick="add()"> <!-- add button for array1 to add the element-->
                 </div>
+                 <!--if ok button of array 2 click display this div-->
                 <div id="display1" STYLE="display:none">
-                <label for="a2" > element of second array: </label>
-                <input id="a2" type="text">
-                <input type="button" value="add" onclick="add1()"> 
+                <label for="array2" > element of second array: </label><!-- enter element of array2-->
+                <input id="array2" type="text">
+                <input type="button" value="add" onclick="add1()"> <!-- add button for array2 to add the element-->
                 <br>
-              <input type="button" value="merge" onclick="mergedata()">  </div>
+              <input type="button" value="merge" onclick="mergedata()"> <!-- merge button to merge  the element of two array--> 
+        </div>
            <br>
-        <span id='displaya1'></span><br>
-        <span id='displaya2'></span>    
-        <span id='displaymerge'></span> 
+        <span id='displayarray1'></span><br><!-- display element of array 1-->
+        <span id='displayarray2'></span>    <!-- display element of array 2-->
+        <span id='displaymerge'></span> <!-- display element after merge the array-->
 </div>
 </div>
-    
 <hr>
-    
-<button onclick="addarray()">add array</button>
+  <!-- div for add new  array-->
+<button onclick="addarray()">add array</button><!-- add button-->
+<!-- if add button click show this div-->
 <div id="addarray" STYLE="display:none">
-    <label for="noa" > how many laguage you want to enter in  array: </label>
+    <label for="noa" > how many element you want to enter in  array: </label><!-- no how many element comtain in array-->
             <input id="noa" type="text">
-            <input type="button" value="ok" onclick="adda()">
-            
+            <input type="button" value="ok" onclick="addarray11()"><!-- ok button for array-->
     </div>
-            <div id="displaya" STYLE="display:none">
-                <label for="arr" > element of  array: </label>
+    <!--if ok button of array  click display this div-->
+            <div id="displayarray11" STYLE="display:none">
+                <label for="arr" > element of  array: </label><!-- enter element of array-->
                 <input id="arr" type="text">
-                <input type="button" value="add" onclick="addarr()"> 
+                <input type="button" value="add" onclick="addarr1()"> <!-- add button for array to add the element-->
                 
-                <label for="e" >  new  element to add in the array: </label>
+                <label for="e" >  new  element to add in the array: </label><!-- enter element to add in the array-->
                 <input id="e" type="text">
-                <input type="button" value="add" onclick="adde()"> 
+                <input type="button" value="add" onclick="addelement()"> <!-- add element button  to add the new element in array-->
                 <br>
-        <span id='displayarr1'></span><br>
-        <span id='displayele'></span>    
+        <span id='displayarr1'></span><br><!-- display element of array -->
+        <span id='displayele'></span>    <!-- display element of array after adding new element-->
+</div>
+
+<hr>
+  <!-- div for check element contains in array-->
+<button onclick="checkarray()">check array</button><!-- check button-->
+<!-- if check button click show this div-->
+<div id="checkarray" STYLE="display:none">
+    <label for="nocheck" > how many element you want to enter in  array: </label><!-- no how many element comtain in array-->
+            <input id="nocheck" type="text">
+            <input type="button" value="ok" onclick="addcheck()"><!-- ok button for array-->
+    </div>
+     <!--if ok button of array  click display this div-->
+            <div id="displaycheck" STYLE="display:none">
+                <label for="arrcheck" > element of  array: </label><!-- enter element of array-->
+                <input id="arrcheck" type="text">
+                <input type="button" value="add" onclick="checkarr()"> <!-- add button for array to add the element-->
+                
+                <label for="check1" > element contain in  array: </label><!-- enter element to check that element present in the array-->
+                <input id="check1" type="text">
+                <input type="button" value="check" onclick="ce()">  <!-- check element button  to check the  element present in array-->
+                <br>
+        <span id='displaych'></span><br><!-- display element of array -->
+        <span id='displayc1'></span>    <!-- display result whether element present in array or not-->
        
 </div>
-
-<hr>
-    
-<button onclick="checkarray()">check array</button>
-<div id="checkarray" STYLE="display:none">
-    <label for="noc" > how many laguage you want to enter in  array: </label>
-            <input id="noc" type="text">
-            <input type="button" value="ok" onclick="addc()">       
-    </div>
-            <div id="displayc" STYLE="display:none">
-                <label for="arrc" > element of  array: </label>
-                <input id="arrc" type="text">
-                <input type="button" value="add" onclick="checkarr()"> 
-                
-                <label for="c" >    element contain in  array: </label>
-                <input id="c" type="text">
-                <input type="button" value="check" onclick="ce()"> 
-                <br>
-
-        <span id='displaych'></span><br>
-        <br>
-        <span id='displayc1'></span>       
-</div>
-
 </body>
 </html>
