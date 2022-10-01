@@ -1,0 +1,8 @@
+show databases;
+create database student_manage;
+use student_manage;
+create table students( sid int(11) primary key auto_increment, sname varchar(100) not null,
+sphone varchar(12), scity varchar(50));
+desc students;
+select * from students;
+drop table students;
