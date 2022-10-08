@@ -27,13 +27,14 @@ function change() {
 		<section class="sign-in">
 			<div class="container">
 				<div class="signin-content">
+					<!-- image -->
 					<div class="forget-image">
 						<figure class="frg-image">
 							<img src="images/6.jpg" alt="sign in image" >
 						</figure>
 						<a href="login.jsp" class="signup-image-link">Back to login</a>
 							</div>
-
+<!-- Sing in  Form fields -->
 					<div class="signin-form">
 						<h2 class="form-title">Forget password?</h2>
 						<form method="post" action="forgetservlet" class="register-form"
@@ -53,7 +54,7 @@ function change() {
 									type="password" name="n_password" id="password"
 									placeholder=" confirm Password" />
 							</div>
-							
+							<!-- Sing in  Form button-->
 							<div class="form-group form-button">
 								<input type="submit" name="forget" id="forget"
 									class="form-submit" value="change password" onclick="change()"/>
