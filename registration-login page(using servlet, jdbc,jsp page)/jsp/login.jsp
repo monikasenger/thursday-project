@@ -25,6 +25,7 @@ function onSubmit() {
 		<section class="sign-in">
 			<div class="container">
 				<div class="signin-content">
+					<!-- Sing in  Form  image-->
 					<div class="signin-image">
 						<figure>
 							<img src="images/signin-image.jpg" alt="sing up image">
@@ -33,7 +34,7 @@ function onSubmit() {
 							account</a>
 							<a href="forget.jsp" class="signup-image-link">forget password</a>
 					</div>
-
+<!-- Sing in  Form fields -->
 					<div class="signin-form">
 					
 
@@ -56,11 +57,13 @@ function onSubmit() {
 									class="label-agree-term"><span><span></span></span>Remember
 									me</label>
 							</div>
+							<!-- Sing in  Form  button-->
 							<div class="form-group form-button">
 								<input type="submit" name="signin" id="signin"
 									class="form-submit" value="Log in" onclick="savedata()" />
 							</div>
 						</form>
+						<!-- Sing in  Form icons -->
 						<div class="social-login">
 							<span class="social-label">Or login with</span>
 							<ul class="socials">
@@ -81,5 +84,5 @@ function onSubmit() {
 
 	
 </body>
-<!-- This templates was made by Colorlib (https://colorlib.com) -->
+
 </html>
