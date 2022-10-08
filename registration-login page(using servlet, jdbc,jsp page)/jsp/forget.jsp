@@ -23,7 +23,7 @@ function change() {
 <body>
 <div class="main">
 
-		<!-- Sing in  Form -->
+		<!-- forget  Form -->
 		<section class="sign-in">
 			<div class="container">
 				<div class="signin-content">
@@ -34,7 +34,7 @@ function change() {
 						</figure>
 						<a href="login.jsp" class="signup-image-link">Back to login</a>
 							</div>
-<!-- Sing in  Form fields -->
+<!-- forge  Form fields -->
 					<div class="signin-form">
 						<h2 class="form-title">Forget password?</h2>
 						<form method="post" action="forgetservlet" class="register-form"
@@ -54,7 +54,7 @@ function change() {
 									type="password" name="n_password" id="password"
 									placeholder=" confirm Password" />
 							</div>
-							<!-- Sing in  Form button-->
+							<!-- forget  Form button-->
 							<div class="form-group form-button">
 								<input type="submit" name="forget" id="forget"
 									class="form-submit" value="change password" onclick="change()"/>
