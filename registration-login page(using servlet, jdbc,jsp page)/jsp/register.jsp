@@ -20,13 +20,14 @@ function onSubmit() {
 </script>
 </head>
     <body>
+	    <!-- Sing up  Form -->
        <section class="signup">
 			<div class="container">
 				<div class="signup-content">
 					<div class="signup-form">
 					
 						<h2 class="form-title">Signup </h2>
-					
+					  <!-- Sing up  Form fields-->
 						<form method="post" action="registrationservlet" class="register-form"
 							id="register-form">
 							<div class="form-group">
@@ -59,12 +60,14 @@ function onSubmit() {
 									agree all statements in <a href="#" class="term-service">Terms
 										of service</a></label>
 							</div>
+							  <!-- Sing up  Form  button-->
 							<div class="form-group form-button">
 								<input type="submit" name="signup" id="signup"
 									class="form-submit" value="Register" onclick="onSubmit()"/>
 							</div>
 						</form>
 					</div>
+					  <!-- Sing up  Form image-->
 					<div class="signup-image">
 						<figure>
 							<img src="images/signup-image.jpg" alt="sing up image">
@@ -72,6 +75,7 @@ function onSubmit() {
 						<a href="login.jsp" class="signup-image-link">I am already
 							member</a>
 					<div class="social-login">
+						  <!-- Sing up  Form icons -->
 							<span class="social-label">Or login with</span>
 							<ul class="socials">
 								<li><a href="#"><i
