@@ -44,7 +44,7 @@ public class registrationservlet extends HttpServlet {
 	
 	ps.executeUpdate();
     //request to register jsp file
-	rd=request.getRequestDispatcher("register.jsp");
+	rd=request.getRequestDispatcher("registration.jsp");
 	rd.forward(request, response);
 	}catch(Exception e) {
 		e.printStackTrace();
