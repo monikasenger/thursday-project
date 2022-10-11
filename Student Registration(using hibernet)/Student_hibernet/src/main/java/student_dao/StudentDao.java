@@ -54,9 +54,10 @@ public class StudentDao {
 public static void showall() {
 	List<Student> l1 = dao.getAllStudent();
     System.out.println("**=============**=================**=============**");
-	l1.forEach(ob5 -> System.out.println("("+ob5.getId()+")id data:\n"+"firstname:"+ob5.getFirstname()+",lastname: "+ ob5.getLastname()+",gender: "
-			+ ob5.getGender()+",age: "+ ob5.getAge()+",DOB: "
-			+ ob5.getDob()+",email: "+ ob5.getEmail()));
+    System.out.println("s_id\t"+"firstname\t"+"lastname\t"+"gender\t"+"age\t"+"DOB\t\t"+"email");
+	l1.forEach(ob5 -> System.out.println(ob5.getId()+"\t"+ob5.getFirstname()+"\t\t"+ ob5.getLastname()+"\t\t"
+			+ ob5.getGender()+"\t"+ ob5.getAge()+"\t "
+			+ ob5.getDob()+"\t"+ ob5.getEmail()));
 	 System.out.println("**=============**=================**=============**");
 }
 
