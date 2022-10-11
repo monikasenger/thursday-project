@@ -14,7 +14,7 @@ import student.Student;
 public  class StudentDaoImpl  {
 	private SessionFactory factory = Student_Session_factory.getFactory();
 	
-	//save data
+	//method to save data a student data
 	public void saveStudent(Student student) {
 		Transaction transaction = null;
 		try(Session session = factory.openSession()) {
@@ -27,7 +27,10 @@ public  class StudentDaoImpl  {
 		}
 	}
 	
-	//get the detail by id
+	/******************************************************/
+	
+	
+	//method to get the detail by id a student data
 	public Student  getStudentById(long id) {
 		Transaction transaction = null;
 		Student student = null;
@@ -42,8 +45,10 @@ public  class StudentDaoImpl  {
 		return student;
 	}
 	
+	/******************************************************/
 	
-	//get all the detail in list
+	
+	//method to get all the detail in list a student data
 	@SuppressWarnings("unchecked")
 	public List<Student> getAllStudent() {
 		Transaction transaction = null;
@@ -59,7 +64,9 @@ public  class StudentDaoImpl  {
 		return students;
 	}
 	
-	//update
+	/******************************************************/
+	
+	//method to update
 	public void updateStudent(Student student) {
 		Transaction transaction = null;
 		try(Session session = factory.openSession()) {
@@ -72,7 +79,9 @@ public  class StudentDaoImpl  {
 		}
 	}
 	
-	//delete
+	/******************************************************/
+	 
+	//method to delete a data a student data
 	public void deleteStudentById(long id) {
 		Transaction transaction = null;
 		try(Session session = factory.openSession()) {
